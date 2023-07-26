@@ -105,7 +105,7 @@ def main():
         thing = f.split('.')[0]
         class_name = CLASS_NAMES[thing]
         class_data = generate_class_string('../data/2025/' + f, class_name)
-        of = open('../io/%s' % thing + '.py', 'w')
+        of = open('../ootp_data_readers/%s' % thing + '.py', 'w')
         of.write(class_data)
         of.close()
 
